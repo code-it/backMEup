@@ -1,5 +1,5 @@
 		<div id="push"></div>
-	</div>	
+	</div>	<!--end wrap -->
 	
 	
 	<!-- the footer of the page --> 

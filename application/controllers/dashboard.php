@@ -24,7 +24,7 @@ class Dashboard extends CI_Controller {
 	
 	
 	/**
-	 * function name : login
+	 * function name : showDashboard
 	 * 
 	 * Description : 
 	 * call login view
@@ -38,7 +38,7 @@ class Dashboard extends CI_Controller {
 	public function showDashboard()
 	{		
 		$this->load->view('gen/header');
-		$this->load->view('gen/menu');
+		//$this->load->view('gen/menu');
 		$this->load->view('dashboard');
 		$this->load->view('gen/footer');
 	}
