@@ -105,9 +105,17 @@ content
 	border-radius: 5px;	
 	height:300px;	
 	filter:alpha(opacity=80); 
-	opacity:0.8;
+	/*opacity:0.8;*/	
+	font-family: ubuntu-r,Arial;
 	padding-left:10px;
 	padding-right:10px;
+}
+
+.status-box .button-box
+{
+	margin-left:-10px;
+	margin-right:-10px;
+	
 }
 
 .status-box img
@@ -185,7 +193,7 @@ content
 	filter:alpha(opacity=80); 
 	opacity:0.8;
 	border:1px solid gray;
-	cursor: pointer;
+	cursor: pointer;	
 	
 	/* slow motion*/
 	-webkit-transition: all 0.30s ease-in-out;
@@ -198,8 +206,7 @@ content
 {
 	filter:alpha(opacity=100); 
 	opacity:1;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 
 .button-box img
@@ -214,6 +221,24 @@ content
 	font-family: ubuntu-r;
 	font-size: 24px;
 }
+
+
+.button-box a, .button-box a:hover
+{
+	color:#353535;
+}
+
+
+.main-content
+{
+	border-radius: 5px;
+	background-color:#f1f1f1;
+	height:300px;
+	filter:alpha(opacity=80); 
+	opacity:0.8;
+	border:1px solid gray;
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------
 Footer

@@ -1,13 +1,8 @@
 <div  class="row-fluid">
-	  	<div class="span2 offset1">
-	  		
-	  		<!-- status message -->
-	  		<div class="status-box green" align="center">
-	  			 <img src="<?php echo base_url()?>/images/smile.png" width="125px"/>	  	
-	  			 <p>yopee</p> 
-	  			 <p>you are safe</p>		 	  			
-	  		</div>	  			  		  		
-		</div>
+	  	<?php
+	  		//load the status box
+	  		$this->load->view('gen/status');
+		?>
 		
 	  	<div class="span6">
 	  		
@@ -42,9 +37,11 @@
 	  		<div class="row-fluid" style="margin-top:10px">
 	  			<div class="span4">
 	  				<!-- setting-->
-	  				<div class="button-box" align="center">	
-	  					<img src="<?php echo base_url()?>/images/settings.png"/>	  					
-	  					<p>Settings</p>
+	  				<div class="button-box" align="center">
+	  					<a href="<?php echo base_url()?>settings">	
+		  					<img src="<?php echo base_url()?>images/settings.png"/>	  					
+		  					<p>Settings</p>
+	  					</a>
   					</div>	
 	  			</div>
 	  			
@@ -67,20 +64,9 @@
 	  		</div>	  	
 	  	</div>
 	  	
-	  	<div class="span2">
-	  		
-	  		<!-- status message -->
-	  		<div class="status-box blue">
-	  			<p>information:</p>
-	  			
-	  			<br />
-	  			 <ul>
-	  			 	<li>DBM: <span>MySQL</span></li>	  			 	
-	  			 	<li>DB name: <span>backmeup</span></li>
-	  			 	<li>Last backup: <span>25-8-2012</span></li>
-	  			 	<li>Next backup: <span>25-9-2012</span></li>	  			 		  			 	
-	  			 </ul>
-	  		</div>	  			  		  		
-		</div>
+	  	<?php
+	  		//load database information box
+	  		$this->load->view('gen/database_info');
+	  	?>
 		
 	</div>
